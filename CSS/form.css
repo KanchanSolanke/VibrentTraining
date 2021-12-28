@@ -1,0 +1,101 @@
+body {
+    margin-top: 5%;
+    background: rgb(52, 209, 236);
+    font-family: Arial;
+    padding: 30px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+    flex: 2px;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+form {
+    max-width: 650px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px;
+    flex-wrap: wrap;
+    max-height: 800px;
+
+}
+
+input,
+label {
+    display: inline-block;
+    width: 200px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+#submit{
+    float: right;
+    width: 60px;
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: gold;
+    }
+
+    .container {
+        height: 200px;
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-flow: wrap;
+
+    }
+
+    .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: wrap;
+        align-items: center;
+
+    }
+    #submit{
+        width: 60px;
+    }
+}
+
+@media all and (display-mode: fullscreen) {
+
+    .center{
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-flow: wrap;
+        float: right;
+        align-items: right;
+    
+    }
+
+
+    body {
+        background-color: rgb(161, 238, 117);
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-flow: wrap;
+
+    }
+}
