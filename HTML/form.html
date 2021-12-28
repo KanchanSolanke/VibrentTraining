@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h1>Form Details</h1><br><br>
+    <form action="https://www.vibrenthealth.com/" method="post">
+        <label for="name">Product name:</label>
+        <input type="text" id="name" name="name" value="" size="65" required><br><br>
+        <label for="Description">Description:</label>
+
+        <input type="text" id="desc" name="desc" value="" size="65" required><br><br>
+        <label for="price">Price:</label>
+
+        <input type="text" id="price" name="price" value="" size="65" required><br><br>
+        <label for="dateofman">Date of Manufacturing:</label>
+
+        <input type="text" id="date" name="date" value="" size="65" required><br><br>
+
+        <label>Upload Image</label>
+        <input type="file" accept="image/png, image/jpeg" name="image" id="file" onchange="loadFile(event)">
+        <p><img id="output" width="200" /></p>
+
+        <div class="container">
+            <div class="center">
+                <input type="submit" id="submit" value="Submit">
+    </form>
+    <script>
+        var loadFile = function (event) {
+            var image = document.getElementById('output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+    </script>
+</body>
+
+</html>
